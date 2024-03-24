@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <header>
+    <h1>leyman ong'ong'a</h1>
+
+  <title>My Portfolio</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial;
+      margin: 10;
+      padding: 10;
+    }
+    .container {
+      max-width: 80px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header styling */
+    .header {
+      background-color: blueviolet;padding: 10px;
+      color: greenyellow
+      text-align; center:
+    }
+
+    /* Introduction section */
+    .intro {
+      background-color: pink
+      padding; 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Skills display */
+    .skills {
+      background-color: green
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .skills ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .skills li {
+      border: 1px solid grey
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Contact information */
+    .contact {
+      background-color: blue
+      color: purple
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      .intro,
+      .skills,
+      .contact {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>leyman ong'ong'a</h1>
+    </div>
+
+    <!-- Introduction section -->
+    <div class="intro">
+      <h2>Introduction</h2>
+      <p>I'm leyman ong'ong'a, i'm a student at royal business school. I'm here for software devepment training.</p>
+    </div>
+
+    <!-- Skills display -->
+    <div class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>web development</li>
+        <li>Machine Learning</li>
+        <li>entrepreneurship</li>
+      </ul>
+    </div>
+
+    <!-- Contact information -->
+    <div class="contact">
+      <h2>Contact me</h2>
+      <p>Email: leymanongonga@gmail.com</p>
+      <p>Social Media:
+        <a href="#">Twitter</a> |
+        <a href="#">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
