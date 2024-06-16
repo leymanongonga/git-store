@@ -1,25 +1,10 @@
-firebase.initialize.App({
-    apiKey: "AIzaSyAOh8w7-XgLwFBwavvwk_BYphmPOruTPDo",
-    authDomain: "plp-task-management.firebaseapp.com",
-    projectId: "plp-task-management",
-    storageBucket: "plp-task-management.appspot.com",
-    messagingSenderId: "333370840798",
-    appId: "1:333370840798:web:51fbecf9b94af4e040544f"   
-}); 
+// script.js
 
-
-const db=firebase.firestore();
-
-// function to add task
-function addTask(){
- const taskinput=document.getElementsById("task-input");
- const task = taskInput.value.trim();
- if(task !== ""){
-    db.collection("task").add({
-      task: task,
-      timestamp: firebase.firestore.fieldValue.serverTimestamp()  
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Message sent! We'll get back to you soon.");
+        form.reset();
     });
-    taskInput.value = "";
-    console.log("task added.");
- } 
-}
+});

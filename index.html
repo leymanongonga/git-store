@@ -1,20 +1,87 @@
 <!DOCTYPE html>
-   <html>
-       <head>
-           <title>task manager</title>
-           <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-           <link rel="stylesheet" href="style.css" />
-       </head>
-       <body>
-            <div class="task-form">
-               <input type="text" id="task-input" placeholder="add a new task"> 
-               <buttom onclick="addTask()">Add Task</button>   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Leather Sofa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="path/to/red-leather-sofa-logo.png" alt="Red Leather Sofa Logo" class="logo">
+            <h1>Red Leather Sofa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Comfort Meets Elegance</h2>
+                <p>Experience the luxury of our red leather sofa. Perfect for any living space.</p>
+                <a href="#contact" class="cta-button">Get Yours Now</a>
             </div>
-
-            <ul id="task-list"></ul>
-
-            <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
-            <script src="script.js"></script>
-          <body>
-     </html>      
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <div class="features-container">
+                <div class="feature">
+                    <h3>Premium Quality</h3>
+                    <p>Made with the finest leather and craftsmanship.</p>
+                </div>
+                <div class="feature">
+                    <h3>Ultimate Comfort</h3>
+                    <p>Designed for maximum comfort with high-density foam cushions.</p>
+                </div>
+                <div class="feature">
+                    <h3>Stylish Design</h3>
+                    <p>Add a touch of elegance to any room with our modern design.</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <img src="path/to/image1.jpg" alt="Red Leather Sofa 1">
+                <img src="path/to/image2.jpg" alt="Red Leather Sofa 2">
+                <img src="path/to/image3.jpg" alt="Red Leather Sofa 3">
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-container">
+                <blockquote>
+                    <p>"The best sofa I have ever owned. It’s both stylish and comfortable!"</p>
+                    <cite>- James Omondi.</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Amazing quality and perfect for my living room. Highly recommend!"</p>
+                    <cite>- Benson Ouma.</cite>
+                </blockquote>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Red Leather Sofa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
